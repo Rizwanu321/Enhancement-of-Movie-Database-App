@@ -1,0 +1,40 @@
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  font-family: Roboto;
+}
+
+.pagination-button {
+  background-color: #263868;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-button.active {
+  background-color: #1b4dab;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination-controls {
+    flex-wrap: wrap;
+  }
+
+  .pagination-button {
+    padding: 6px 12px;
+    margin: 0 3px;
+    font-size: 14px;
+  }
+}
